@@ -1,0 +1,39 @@
+@import './game.scss';
+@import './modal.scss';
+@import './settings.scss';
+@import './variables.scss';
+
+body {
+   background-color: $color-dark-green;
+   overflow: hidden;
+}
+
+#root {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+   font-family: 'Outfit';
+   font-style: normal;
+}
+
+.active {
+   display: block;
+}
+
+.active-flex {
+   display: flex;
+}
+
+.inactive {
+   display: none;
+}
+
+.tacColor {
+   color: $color-yellow;
+}
+
+.tieColor {
+   color: $color-light-grey;
+}

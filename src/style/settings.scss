@@ -1,0 +1,138 @@
+@import './variables.scss';
+
+// Settings section styling
+
+// Choice Mark
+.settings {
+   text-align: center;
+   width: $width-large;
+   // display: none;
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo-tac {
+   margin-left: $margin-tiny;
+}
+
+.choice-mark {
+   width: 100%;
+   margin-top: $margin-small;
+   border-radius: $radius-small;
+   background-color: $color-light-green;
+   box-shadow: inset 0px -8px 0px #10212a;
+}
+
+.choice-logo {
+   margin: 0;
+   padding-top: $padding-medium;
+   color: $color-light-grey;
+   font-size: $font-small;
+   line-height: $line-height-small;
+   font-weight: $font-weight-bold;
+   letter-spacing: $spacing-core;
+   text-transform: uppercase;
+}
+
+.choice-hint {
+   margin: 0;
+   padding-bottom: $padding-medium;
+   opacity: 0.5;
+   color: $color-light-grey;
+   mix-blend-mode: normal;
+   font-size: $fon-size-tiny;
+   line-height: $line-height-tiny;
+   font-weight: $font-weight-light;
+   letter-spacing: $spacing-core;
+}
+
+.mark-switch {
+   display: flex;
+   justify-content: center;
+   padding: $padding-tiny;
+   border-radius: $radius-small;
+   margin: $margin-small $margin-small $margin-tiny-small $margin-small;
+   background-color: $color-dark-green;
+}
+
+.switch-tic,
+.switch-tac {
+   cursor: pointer;
+   display: inline-block;
+   border-radius: $radius-small;
+   padding: $padding-tiny-small $padding-huge;
+}
+
+.switch-tic:hover,
+.switch-tac:hover {
+   background: rgba(168, 191, 201, 0.05);
+}
+
+.tic-imagen,
+.tac-imagen {
+   filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(157deg)
+      brightness(180%) contrast(65%);
+}
+
+.active-area {
+   background-color: $color-light-grey;
+}
+
+.active-area:hover {
+   background-color: $color-light-grey;
+}
+
+.active-mark {
+   filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(157deg)
+      brightness(35%) contrast(70%);
+}
+
+//
+
+// Choice Mode
+
+.choice-mode {
+   display: flex;
+   flex-direction: column;
+   margin-top: $margin-large;
+}
+
+.mode-solo,
+.mode-player {
+   outline: none;
+   border: none;
+   cursor: pointer;
+   padding: $padding-small 0;
+   border-radius: $radius-small;
+   font-size: $font-medium;
+   font-weight: $font-weight-bold;
+   line-height: $line-height-medium;
+   text-transform: uppercase;
+   letter-spacing: $spacing-core;
+   color: $color-dark-green;
+}
+
+.mode-solo {
+   margin-bottom: $margin-small;
+   background-color: $color-yellow;
+   box-shadow: inset 0px -8px 0px #cc8b13;
+}
+
+.mode-player {
+   background-color: $color-blue;
+   box-shadow: inset 0px -8px 0px #118c87;
+}
+
+.mode-solo:hover {
+   background-color: #ffc860;
+}
+
+.mode-player:hover {
+   background-color: #65e9e4;
+}
+
+//

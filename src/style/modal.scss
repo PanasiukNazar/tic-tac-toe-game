@@ -1,0 +1,111 @@
+@import './variables.scss';
+
+.modal-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   z-index: 100;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   background-color: $color-light-green;
+   padding: $margin-large 0;
+}
+
+.modal-text-result {
+   font-weight: $font-weight-bold;
+   font-size: $font-small;
+   line-height: $line-height-small;
+   letter-spacing: $spacing-core;
+   text-transform: uppercase;
+   color: $color-light-grey;
+}
+
+.modal-large-text-block {
+   display: flex;
+   align-items: center;
+}
+
+.mark-img {
+   display: inline-block;
+   margin-right: $margin-small;
+}
+
+.modal-large-text {
+   margin: 0;
+   font-weight: $font-weight-bold;
+   font-size: $font-huge;
+   line-height: $line-height-huge;
+   letter-spacing: $spacing-large;
+   text-transform: uppercase;
+   color: $color-light-grey;
+}
+
+.modal-buttons {
+   margin-top: $margin-small;
+}
+
+.button-cancel,
+.button-start {
+   font-family: 'Outfit';
+   border: none;
+   outline: none;
+   border-radius: $radius-tiny;
+   font-weight: $font-weight-bold;
+   font-size: $font-small;
+   line-height: $line-height-small;
+   letter-spacing: $spacing-core;
+   text-transform: uppercase;
+   color: $color-dark-green;
+}
+
+.button-cancel {
+   margin-right: $margin-tiny-small;
+   background: $color-light-grey;
+   box-shadow: inset 0px -4px 0px #6b8997;
+   padding: $padding-tiny-small $padding-small;
+}
+
+.button-start {
+   background: #f2b137;
+   box-shadow: inset 0px -4px 0px #cc8b13;
+   padding: $padding-tiny-small $padding-small;
+}
+
+.button-cancel:hover {
+   background-color: $color-hover-light-grey;
+}
+
+.button-start:hover {
+   background-color: #ffc860;
+}
+
+// .modal-result {
+//    display: none;
+// }
+
+// .modal-restart {
+//    display: none;
+
+//    .modal {
+//       padding: $padding-medium 0;
+//    }
+
+//    .modal-large-text-block {
+//       margin-bottom: $margin-small;
+//    }
+
+//    .modal-buttons {
+//       margin: 0;
+//    }
+// }

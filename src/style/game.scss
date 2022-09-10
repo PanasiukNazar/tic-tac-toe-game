@@ -1,0 +1,108 @@
+@import './variables.scss';
+
+// Header section styling
+
+.game-header {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   width: $width-large;
+}
+
+.game-chosen-mark {
+   display: flex;
+   align-items: center;
+   padding: $padding-tiny 0;
+   margin-right: $margin-little;
+   background-color: $color-light-green;
+   border-radius: $radius-tiny;
+}
+
+.list-tic-item,
+.list-tac-item {
+   padding-left: $padding-medium;
+   margin-right: $margin-tiny-small;
+   display: none;
+}
+
+.mark-turn {
+   margin: 0;
+   padding-right: $padding-medium;
+   font-weight: $font-weight-bold;
+   font-size: $font-small;
+   line-height: $line-height-small;
+   letter-spacing: $spacing-core;
+   text-transform: uppercase;
+   color: $color-light-grey;
+}
+
+.game-restart {
+   cursor: pointer;
+   padding: $padding-tiny-small;
+   border-radius: $radius-tiny;
+   background: $color-light-grey;
+   box-shadow: inset 0px -4px 0px #6b8997;
+}
+
+.game-restart:hover {
+   background-color: $color-hover-light-grey;
+}
+
+//
+
+// Body section styling
+
+.game-body {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: $margin-little;
+   grid-row-gap: $margin-little;
+   margin-top: $margin-little;
+}
+
+.mark-checkbox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: $size-small;
+   height: $size-small;
+   border-radius: $radius-small;
+   background-color: $color-light-green;
+   box-shadow: inset 0px -8px 0px #10212a;
+}
+
+//
+
+// Footer section styling
+
+.game-footer {
+   display: flex;
+   justify-content: space-between;
+   margin-top: $margin-little;
+}
+
+.result-item {
+   width: $size-small;
+   text-align: center;
+   padding: $padding-tiny 0;
+   border-radius: $radius-small;
+}
+
+.item-text {
+   font-weight: $font-weight-light;
+   font-size: $fon-size-tiny;
+   line-height: $line-height-tiny;
+   letter-spacing: $spacing-core;
+   color: $color-dark-green;
+}
+
+.item-counter {
+   font-size: $font-big;
+   line-height: $line-height-big;
+   font-weight: $font-weight-bold;
+   color: $color-dark-green;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+}
+
+//
